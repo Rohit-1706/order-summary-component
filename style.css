@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap');
+
+:root{
+    --pale-blue: hsl(225, 100%, 94%);
+    --bright-blue: hsl(245, 75%, 52%);
+    --very-pale-blue: hsl(225, 100%, 98%);
+    --desaturated-blue: hsl(224, 23%, 55%);
+    --dark-blue: hsl(223, 47%, 23%);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Red Hat Display', sans-serif;
+}
+
+body{
+    height: 100vh;
+    background: url(./images/pattern-background-desktop.svg);
+    background-color: var(--pale-blue);
+    background-repeat: no-repeat;
+    background-size: contain;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+ 
+.full-card{
+    width: 400px;
+    height: auto;
+    background-color: #fff;
+    border-radius: 15px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.hero-img{
+    width: 400px;
+    border-top-right-radius: 15px;
+    border-top-left-radius: 15px;
+}
+
+h1{
+    padding-top: 30px;
+    padding-bottom: 10px;
+    text-align: center;
+    font-size: 28px;
+    font-weight: bold;
+    color: #000;
+
+}
+.card-details > p{
+    font-size: 16px;
+    text-align: center;
+    color: var(--dark-blue);
+    opacity: 0.7;
+    line-height: 1.5em;
+    letter-spacing: 0.5px;
+    padding: 10px;
+}
+
+.plan-section{
+    display: flex;
+    width: 80%;
+    background: rgba(173, 188, 250, 0.1);
+    border-radius: 10px;
+    padding: 20px;
+    margin: auto;
+   
+}
+
+.plan-section > p{
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.plan-section > small{
+    font-size: 16px;
+    font-weight: normal;
+    line-height: 0.5em;
+}
+.plan-section > img{
+    margin-right: 18px;
+    float: left;
+    width: 40px;
+    height: 40px;
+}
+
+.change{
+    margin-left: 75px;
+    display: inline-block;
+}
+.change:hover{
+    opacity: 0.8;
+}
+
+.btn-primary{
+    margin: 10px;
+    padding: 10px;
+    text-align: center;
+}
+
+.main-btn{
+    margin: 20px 0;
+    width: 87%;
+    padding: 10px 0;
+    font-size: 14px;
+    font-weight: bold;
+    border: none;
+    background-color: var(--bright-blue);
+    color: white;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    cursor: pointer;
+}
+.main-btn:hover{
+    opacity: 0.7;
+}
+
+.cancel-order{
+    font-size: 14px;
+    font-weight: bold;
+    color: var(--desaturated-blue);
+    margin-bottom: 20px;
+    cursor: pointer;
+}
+
+.cancel-order:hover{
+    color: #000;
+}
+
+@media (max-width: 480px){
+    body{
+        background-image: url(./images/pattern-background-mobile.svg);
+    }
+}
